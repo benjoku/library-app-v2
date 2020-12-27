@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :books, only: [:show, :index, :new, :create]
+  resources :books
   root 'pages#home'
   get 'about', to: 'pages#about'
 end
